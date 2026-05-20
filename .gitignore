@@ -1,0 +1,46 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Models and large artifacts (keep the directory but not the binaries)
+models/*.joblib
+models/*.pkl
+
+# Local data downloads (keep the seed dataset, ignore everything else)
+data/*.csv
+!data/seed_dataset.csv
+data/raw/
+data/processed/
+
+# Jupyter
+.ipynb_checkpoints/
