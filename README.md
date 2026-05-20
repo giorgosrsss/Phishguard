@@ -132,6 +132,9 @@ phishguard train --data data/seed_dataset.csv --out models/phishguard.joblib
 
 # 3. Score a URL
 phishguard scan "http://paypa1-login.security-update.tk/verify?id=42"
+
+# 4. After training
+phishguard scan "http://paypa1-login.security-update.tk/verify?id=42" --model models/phishguard.joblib
 ```
 
 Sample output:
